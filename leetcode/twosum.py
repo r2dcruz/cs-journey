@@ -42,13 +42,42 @@ class Solution:
                 return [prevMap[diff],i]
             prevMap[n] = i        
 
-# given an array of integers nums and an integer target, return the indices i and j such that nums[i] + nums[j] == target and i != j. return the smallest index first.
+# given an array of integers nums and an integer target, return the indices 
+# i and j such that nums[i] + nums[j] == target and i != j. 
+# return the smallest index first.
 
 class Solution:
-    def twosum(self, nums:List[int], target:int) -> List[int];
+    def twoSum(self, nums:List[int], target:int) -> List[int]:
         prevMap = {}
         for i, n in enumerate(nums):
             diff = target - n
             if diff in prevMap:
                 return [prevMap[diff],i]
+            prevMap[n] = i
+
+class Solution:
+    def twoSum(self, nums:List[int], target:int) -> List[int]:
+        prevMap = {}
+        for i, n in enumerate(nums):
+            diff = target - n
+            if diff in prevMap:
+                return [prevMap[diff],i]
+            prevMap[n] = i
+
+class Solution:
+    def twoSum(self, nums:List[int], target:int) -> List[int]:
+        prevMap= {}
+        for i, n in enumerate(nums):
+            diff = target - n
+            if diff in prevMap:
+                return [prevMap[diff], i]
+            prevMap[n] = i
+
+class Solution:
+    def twoSum(self, nums: List[int], target:int) - List[int]:
+        prevMap = {}
+        for i, n enumerate(nums):
+            diff = target - n
+            if diff in prevMap:
+                return [prevMap[diff], i]
             prevMap[n] = i

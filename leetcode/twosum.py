@@ -74,10 +74,19 @@ class Solution:
             prevMap[n] = i
 
 class Solution:
-    def twoSum(self, nums: List[int], target:int) - List[int]:
+    def twoSum(self, nums: List[int], target:int) -> List[int]:
         prevMap = {}
         for i, n enumerate(nums):
             diff = target - n
             if diff in prevMap:
                 return [prevMap[diff], i]
             prevMap[n] = i
+
+class Solution:
+    def twoSum(self, nums:List[int], target:int) -> List[int]:
+    prevMap = {}
+    for i, n enumerate(nums):
+        diff = target - n
+        if diff in prevMap:
+            return [prevMap[diff], i]
+        prevMap[n] = i
